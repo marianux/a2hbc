@@ -1,5 +1,5 @@
-#summary One-sentence summary of this page.
 #labels Featured
+#This is a tutorial for understanding how to use a2hbc
 
 ==What is it ?==
 
