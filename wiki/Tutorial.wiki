@@ -122,7 +122,7 @@ Unbalanced Results for
 |  99%  86% ||   0%   0% ||  81%  99% ||   91%   |   60%   |   62%   |
 }}}
 
-In the case that you would like to integrate a2hbc to your software, or you have a proprietary ECG format not allowed by a2hbc, the best choice is that you pass the ECG samples directly. For doing this, you will have follow the requirements in Table  indicated with a <math>\textstyle ^{2}</math>, and  
+In the case that you would like to integrate a2hbc to your software, or you have a proprietary ECG format not allowed by a2hbc, the best choice is that you pass the ECG samples directly. For doing this, you will have follow the requirements in Table  indicated with a ^{2}, and  
 
 
 
@@ -143,7 +143,7 @@ From the user point of view, you should be satisfied with this clue, however if 
 
 https://a2hbc.googlecode.com/svn/wiki/3D__Mariano_misc_a2hbc_doc_clust_rep_ex1.png
 
-Now if we repeat the same process two times, our clustering algorithm does not guarantee to find the same partition. However our intuition tells us that in case where the classes are well separated, the partition is likely to remain very similar through the repetitions. In the opposite case, the partition can change. Then after <math>\textstyle N</math> repetitions, the ''QRS_amount ''heartbeats were assigned <math>\textstyle N</math> cluster labels.
+Now if we repeat the same process two times, our clustering algorithm does not guarantee to find the same partition. However our intuition tells us that in case where the classes are well separated, the partition is likely to remain very similar through the repetitions. In the opposite case, the partition can change. Then after N repetitions, the ''QRS_amount ''heartbeats were assigned N cluster labels.
 
 https://a2hbc.googlecode.com/svn/wiki/4D__Mariano_misc_a2hbc_doc_clust_rep_ex2.png
 
@@ -151,7 +151,7 @@ So the number of clusters increase according to ''N''. In order to keep this num
 
 https://a2hbc.googlecode.com/svn/wiki/5D__Mariano_misc_a2hbc_doc_clust_rep_ex3.png
 
-Then we can group together some clusters based on this labeling distance. The ''a2hbc'' group together clusters within a distance of <math>\textstyle 0.2\text{·}N</math>.
+Then we can group together some clusters based on this labeling distance. The ''a2hbc'' group together clusters within a distance of 0.2·N.
 
 Table 1: List of parameters of a2hbc.
 
@@ -173,6 +173,10 @@ Table 1: List of parameters of a2hbc.
 || 'ClusteringRepetitions' || 1 || 1 <= x <= 10 || Repetitions of the clustering process. 3 || 
 || 'ClusterPresence' || 75 || 0 <= x <= 100 || Threshold for the qualified majority. 3 || 
 || 'Repetitions' || 1 || x >= 1 || Repetitions to evaluate this recordings. 3 || 
+
+1 and 2 indicates groups of parameters that can not be mixed. You can specify file name and format, or pass the ECG samples, QRS annotations, etc.
+
+3 See a complete explanation in the text, or in the references [1, 2].
 
 
 
@@ -205,7 +209,7 @@ lab = [lab1; lab2];
 ...
 }}}
 
-It is recommended to adapt this features to the batch manager available in your computing facilities. In the case of our University, the batch manager used is Condor [3]. You can ask me for the condor implementation for multiprocessing, but the details of this are outside of the scope of this tutorial.
+It is recommended to adapt this features to the batch manager available in your computing facilities. In the case of our University, the batch manager used is Condor `[3`]. You can ask me for the condor implementation for multiprocessing, but the details of this are outside of the scope of this tutorial.
 
 ==Acknowledgments==
 
