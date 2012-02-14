@@ -26,7 +26,7 @@ Several examples are included in the ''examples.m'' script. In this tutorial we 
 
 In this case the ''control panel'' is displayed to gather some information from the user:
 
-https://a2hbc.googlecode.com/svn/wiki/1D__Mariano_misc_a2hbc_doc_control_panel.PNG
+https://a2hbc.googlecode.com/svn/wiki/control_panel_d.PNG
 
 You must enter the recording file name and its format, the other controls you can leave with its default values by the moment. You can select the ''208.dat'' recording, included in the ''example recordings ''folder, and set the ''MIT'' format. Then press ''Run!, ''the script will start working. You can follow the evolution in the progress bar, and after a while, it ends and display the classification results
 
